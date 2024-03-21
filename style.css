@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.content_black {
+    background-color: black;
+    color: white;
+}
+
+.content_red {
+    background-color: darkred;
+    color: white;
+}
+
+.content {
+    padding: 50px;
+}
+
+.content h1 {
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+
+
+.band-event {
+    color: white;
+    padding: 20px;
+    border-left: 2px solid;
+}
+
+.band-event .event-date {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.band-event .event-time {
+    font-size: 17px;
+    font-family: 'Consolas', sans-serif;
+}
+
+.band-event .event-name {
+    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+}
+
+.band-event .event-location {
+    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+}
+
+
+
+
+#glitch_container {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust the height as needed */
+}
+
+.glitch {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif, sans-serif;
+    letter-spacing: 10px;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    animation: glitch 10s linear infinite;
+}
+
+.glitch:before,
+.glitch:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+#reigned:before {
+    animation: glitchTop 1.1s linear infinite;
+}
+
+#from:before {
+    animation: glitchTop 1.9s linear infinite;
+}
+
+#below:before {
+    animation: glitchTop 1.7s linear infinite;
+}
+
+.glitch:before {
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    color: red;
+    z-index: -1;
+}
+
+#reigned:after {
+    animation: glitchBottom 1.5s linear infinite;
+}
+
+#from:after {
+    animation: glitchBottom 1.3s linear infinite;
+}
+
+#below:after {
+    animation: glitchBottom 1.9s linear infinite;
+}
+
+.glitch:after {
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    color: turquoise;
+    z-index: -1;
+}
+
+@keyframes glitch {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+@keyframes glitchTop {
+
+    2%,
+    64% {
+        transform: translate(2px, -2px);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+@keyframes glitchBottom {
+
+    2%,
+    64% {
+        transform: translate(-2px, 0);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0);
+    }
+
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}
