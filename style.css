@@ -1,64 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
     padding: 0px;
     margin: 0px;
-    background-color: black;
-    overflow-x: hidden;
-}
-
-.content_black {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
     color: white;
 }
 
-.content_red {
+a {
+    color: white;
+}
+
+h1 {
+    letter-spacing: 10px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
     background-color: darkred;
-    color: white;
+}
+
+.blue {
+    background-color: SteelBlue ;
+}
+
+.cgray {
+    color: gray;
 }
 
 .content {
     padding: 50px;
+    line-height: 1.6;
 }
-
-.content h1 {
-    font-family: 'Impact', sans-serif;
-    letter-spacing: 10px;
-    font-size: 50px;
-}
-
-
 
 .band-event {
-    color: white;
     padding: 20px;
     border-left: 2px solid;
 }
 
 .band-event .event-date {
-    font-size: 35px;
     font-weight: bold;
-    font-family: 'Arial', sans-serif;
 }
 
 .band-event .event-time {
-    font-size: 17px;
-    font-family: 'Consolas', sans-serif;
+    font-family: 'Courir', sans-serif;
 }
 
 .band-event .event-name {
-    font-size: 20px;
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 .band-event .event-location {
-    font-size: 20px;
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
-
-
-
-#glitch_container {
+#content_glitch {
+    background-color: black;
     display: flex;
     flex-direction: column;
     /* Stack elements vertically */
@@ -72,7 +75,6 @@ body {
     font-family: Impact, 'Arial Narrow Bold', sans-serif, sans-serif;
     letter-spacing: 10px;
     font-size: 60px;
-    color: white;
     position: relative;
     z-index: 1;
     animation: glitch 10s linear infinite;
