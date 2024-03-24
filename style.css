@@ -27,7 +27,7 @@ h2 {
 }
 
 .blue {
-    background-color: SteelBlue ;
+    background-color: SteelBlue;
 }
 
 .cgray {
@@ -39,142 +39,93 @@ h2 {
     line-height: 1.6;
 }
 
-.band-event {
-    padding: 20px;
-    border-left: 2px solid;
-}
-
-.band-event .event-date {
-    font-weight: bold;
-}
-
-.band-event .event-time {
-    font-family: 'Courir', sans-serif;
-}
-
-.band-event .event-name {
-    font-family: 'Verdana', sans-serif;
-}
-
-.band-event .event-location {
-    font-family: 'Verdana', sans-serif;
-}
-
-#content_glitch {
+#glitch {
     background-color: black;
     display: flex;
     flex-direction: column;
-    /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Adjust the height as needed */
 }
 
-.glitch {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif, sans-serif;
-    letter-spacing: 10px;
-    font-size: 60px;
-    position: relative;
-    z-index: 1;
-    animation: glitch 10s linear infinite;
+#glitch video {
+    max-width: 100%;
+    height: auto;
 }
 
-.glitch:before,
-.glitch:after {
-    content: attr(title);
-    position: absolute;
-    left: 0;
+.band-event {
+    padding: 20px;
+    border-left: 2px solid;
+    margin-bottom: 40px;
 }
 
-#reigned:before {
-    animation: glitchTop 1.1s linear infinite;
+.band-event .event-date {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
-#from:before {
-    animation: glitchTop 1.9s linear infinite;
+.band-event .event-time {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
 }
 
-#below:before {
-    animation: glitchTop 1.7s linear infinite;
+.band-event .event-name {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
-.glitch:before {
-    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+.band-event .event-location {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+}
+
+hr {
+    color: white;
+    background: white;
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+.countdown {
+    color: black;
+}
+
+.countdown-item {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: white;
+    color: gray;
+    text-align: center;
+}
+
+.countdown-number {
+    font-weight: bold;
+}
+
+.countdown-label {
+    font-size: 0.9em;
+    color: darkgrey;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center; /* Vertically center the content */
+    text-decoration: none;
+}
+
+.social-links a img {
+    width: 30px; /* Set the width of the image */
+    margin-right: 10px; /* Add some spacing between the image and text */
+    background-color: white;
+    border-radius: 100%;
+    padding: 1px;
+}
+
+#copy {
     color: red;
-    z-index: -1;
-}
-
-#reigned:after {
-    animation: glitchBottom 1.5s linear infinite;
-}
-
-#from:after {
-    animation: glitchBottom 1.3s linear infinite;
-}
-
-#below:after {
-    animation: glitchBottom 1.9s linear infinite;
-}
-
-.glitch:after {
-    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-    color: turquoise;
-    z-index: -1;
-}
-
-@keyframes glitch {
-
-    0%,
-    100% {
-        transform: none;
-    }
-
-    2%,
-    64% {
-        transform: translate(2px, 0) skew(0deg);
-    }
-
-    4%,
-    60% {
-        transform: translate(-2px, 0) skew(0deg);
-    }
-
-    62% {
-        transform: translate(0, 0) skew(5deg);
-    }
-}
-
-@keyframes glitchTop {
-
-    2%,
-    64% {
-        transform: translate(2px, -2px);
-    }
-
-    4%,
-    60% {
-        transform: translate(-2px, 2px);
-    }
-
-    62% {
-        transform: translate(13px, -1px) skew(-13deg);
-    }
-}
-
-@keyframes glitchBottom {
-
-    2%,
-    64% {
-        transform: translate(-2px, 0);
-    }
-
-    4%,
-    60% {
-        transform: translate(-2px, 0);
-    }
-
-    62% {
-        transform: translate(-22px, 5px) skew(21deg);
-    }
 }

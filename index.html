@@ -5,28 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reigned From Below</title>
-    <link rel="icon" type="image/png" href="RFB_cube_inv.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/RFB_cube_inv.png" sizes="32x32" />
     <link rel="stylesheet" href="style.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
-    <!--<script src="script.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="content black">
-        <div id="content_glitch">
-            <div class="glitch" id="reigned" title="REIGNED">REIGNED</div>
-            <div class="glitch" id="from" title="FROM">FROM</div>
-            <div class="glitch" id="below" title="BELOW">BELOW</div>
-        </div>
+        <div id="glitch"><video src="images/rfb.webm" type="video/webm" autoplay loop></video></div>
     </div>
     <div class="content red">
-        <h1>EVENTS</h1>
+        <h1>UPCOMING EVENTS</h1>
         <div class="band-event">
-            <span class="event-date">19. April 2024</span><br>
+            <span class="event-date" data-event-date="Apr 19, 2024 19:00:00">19. April 2024</span><br>
             <span class="event-time">19:00 Uhr</span><br>
             <span class="event-name">Kinder- und Jugendzentrum B58</span><br>
             <span class="event-location">Bültenweg 58</span><br>
             <span class="event-location">38106 Braunschweig</span>
+
+            <br>
+            <hr>
+            <br>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days"></span>
+                    <span class="countdown-label">TAGE</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours"></span>
+                    <span class="countdown-label">STD</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes"></span>
+                    <span class="countdown-label">MIN</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds"></span>
+                    <span class="countdown-label">SEK</span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="content black">
@@ -42,47 +60,34 @@
     <div class="content blue">
         <h1>SOCIAL MEDIA</h1>
         <div class="social-links">
-            <a href="https://www.instagram.com/rfb.band/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/rfb.band/" target="_blank">
+                <img src="images/instagram.png" alt="">
+                Instagram
+            </a>
             <br>
             <br>
-            <a href="https://www.youtube.com/@ReignedFromBelow" target="_blank">YouTube</a>
+            <a href="https://www.youtube.com/@ReignedFromBelow" target="_blank">
+                <img src="images/youtube.png" alt="">
+                YouTube
+            </a>
             <br>
             <br>
-            <a href="https://www.backstagepro.de/reigned-from-below" target="_blank">Backastage Pro</a>
+            <a href="https://www.backstagepro.de/reigned-from-below" target="_blank">
+                <img src="images/buchstabe-b.png" alt="">
+                Backastage Pro
+            </a>
+            <br>
+            <br>
+            <a href="mailto:reignedfrombelow@gmail.com" target="_blank">
+                <img src="images/email.png" alt="">
+                eMail
+            </a>
         </div>
     </div>
     <div class="content black">
-        <h2>Datenschutzerklärung</h2>
-        Nachfolgend informieren wir dich über die Erhebung personenbezogener Daten bei Nutzung unserer Webseite.<br>
+        <a href="legal.html">Impressum, Datenschutz, Haftungsausschluss</a>
         <br>
-        <b>1. Hosting durch GitHub Pages</b>
-        Diese Webseite ist auf Github Pages (www.reignedfrombelow.github.io) gehosted und somit Open Source.<br>
-        Privacy Policy von Github:<br>
-        https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement<br>
-        <br>
-        <b>2. Datenerhebung und -verwendung</b><br>
-        Es werden keine personenbezogenen Daten erhoben. Diese Webseite dient ausschließlich der
-        Informationsverteilung.<br>
-        <br>
-        <b>3. Server-Log-Files</b><br>
-        Neben der IP Adresse, werden der Referrer (Seite des Links, auf welchen geklickt wurde) und Informationen zu
-        Browser und Betriebssystem an den Webserver übermittelt.<br>
-        Dies Dient zur Überwachung, damit Störungen und Missbrauchsfälle erkannt und behoben werden können.<br>
-        Diese Funktion wird durch Github betrieben / genutzt.<br>
-        <br>
-        <b>4. Cookies</b><br>
-        Diese Seite verwendet keine Cookies.
-
-        <h2>Impressum</h2>
-        <b>Verantwortlicher für diese Webseite</b><br>
-        Mario Motschnik (Band: Reigned From Below)<br>
-        Trift 2<br>
-        38162 Cremlingen/Destedt<br>
-        E-Mail: <a href="mailto:reignedfrombelow@gmail.com">reignedfrombelow@gmail.com</a><br>
-
-        <h2>Haftungsausschluss</h2>
-        Wir übernehmen keine Haftung für die Inhalte externer Links.<br>
-        Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+        <span id="copy">&copy; REIGNED FROM BELOW - 2024</span>
     </div>
 </body>
 
