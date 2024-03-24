@@ -98,9 +98,10 @@ hr {
     margin: 0 5px;
     padding: 3px;
     border-radius: 5px;
-    background-color: white;
-    color: gray;
+    background-color: black;
+    color: white;
     text-align: center;
+    margin-top: 10px;
 }
 
 .countdown-number {
@@ -109,7 +110,7 @@ hr {
 
 .countdown-label {
     font-size: 0.9em;
-    color: darkgrey;
+    color: lightgrey;
 }
 
 .social-links a {
