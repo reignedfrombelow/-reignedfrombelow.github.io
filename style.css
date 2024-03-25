@@ -10,6 +10,10 @@ a {
     color: white;
 }
 
+a:hover {
+    color: lightgray;
+}
+
 h1 {
     letter-spacing: 10px;
 }
@@ -45,7 +49,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
+    margin-top: -30vh;
 }
 
 #glitch video {
@@ -95,13 +100,11 @@ hr {
 
 .countdown-item {
     display: inline-block;
-    margin: 0 5px;
-    padding: 3px;
+    padding: 3px 10px;
     border-radius: 5px;
     background-color: black;
     color: white;
     text-align: center;
-    margin-top: 10px;
 }
 
 .countdown-number {
