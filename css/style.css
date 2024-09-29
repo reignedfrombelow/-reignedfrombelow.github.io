@@ -3,7 +3,6 @@ body {
     margin: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
-    color: white;
 }
 
 a {
@@ -24,66 +23,37 @@ h2 {
 
 .black {
     background-color: black;
+    color: white;
 }
-
 .red {
-    background-color: darkred;
+    background: red;
 }
-
-.blue {
-    background-color: SteelBlue;
-}
-
 .cgray {
     color: gray;
 }
 
 .content {
-    padding: 50px;
-    line-height: 1.6;
-}
-
-#glitch {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-    margin-top: -30vh;
-}
-#glitch video {
-    max-width: 100%;
-    height: auto;
-}
-#glitchlinktree {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#glitchlinktree video {
-    width:300px;
-    height: auto;
-}
-
-.flexalign {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 30px;
+    line-height: 1.6;
 }
 
 .band-event {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: none;
     padding: 20px;
     border-left: 2px solid;
     margin-bottom: 40px;
 }
 
 .band-event .event-date {
-    font-family: 'Arial Black', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -104,25 +74,15 @@ h2 {
     font-size: 1em;
 }
 
-hr {
-    color: white;
-    background: white;
-    width: 50%;
-    text-align: left;
-    float: left;
-}
-
-.countdown {
-    color: black;
-}
-
 .countdown-item {
     display: inline-block;
     padding: 3px 10px;
     border-radius: 5px;
-    background-color: black;
+    background-color: none;
     color: white;
     text-align: center;
+    border: 1px solid white;
+    margin-top: 20px;
 }
 
 .countdown-number {
@@ -134,22 +94,30 @@ hr {
     color: lightgrey;
 }
 
-.social-links a {
+#social-links {
+    background: none;
+}
+.social-link {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-decoration: none;
-    margin-bottom: 30px;
+    background: black;
+    padding: 10px;
+    margin: 10px;
 }
-
-.social-links a img {
-    width: 30px; /* Set the width of the image */
+.social-link img {
+    width: 40px; /* Set the width of the image */
     margin-right: 10px; /* Add some spacing between the image and text */
     background-color: white;
     border-radius: 100%;
     padding: 1px;
 }
+.social-link-text {
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
 
 #copy {
     color: red;

@@ -1,0 +1,25 @@
+#glitch {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin-top: -30vh;
+}
+#glitch video {
+    max-width: 100%;
+    height: auto;
+}
+
+#glitchlinktree {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#glitchlinktree video {
+    width:300px;
+    height: auto;
+}
