@@ -2,7 +2,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 a {
@@ -31,6 +31,9 @@ h2 {
 .cgray {
     color: gray;
 }
+.cwhite {
+    color: white;
+}
 
 .content {
     display: flex;
@@ -40,6 +43,14 @@ h2 {
     text-align: center;
     padding: 30px;
     line-height: 1.6;
+}
+
+.bgimage {
+    background-image: url('../images/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
 }
 
 .band-event {
@@ -103,8 +114,9 @@ h2 {
     align-items: center;
     text-decoration: none;
     background: black;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 30px;
+    margin: 20px 0px;
+    border: 1px solid white;
 }
 .social-link img {
     width: 40px; /* Set the width of the image */
