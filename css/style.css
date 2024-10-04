@@ -13,10 +13,6 @@ a:hover {
     color: lightgray;
 }
 
-h1 {
-    letter-spacing: 10px;
-}
-
 h2 {
     text-decoration: underline;
 }
@@ -41,7 +37,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 50px 0px;
     line-height: 1.6;
 }
 
@@ -52,84 +48,6 @@ h2 {
     /* background-attachment: fixed; */
     background-position: center;
 }
-
-.band-event {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    background: none;
-    padding: 20px;
-    border-left: 2px solid;
-    margin-bottom: 40px;
-}
-
-.band-event .event-date {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 1.3em;
-}
-
-.band-event .event-time {
-    font-family: 'Arial', sans-serif;
-    font-size: 1em;
-}
-
-.band-event .event-name {
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.band-event .event-location {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 1em;
-}
-
-.countdown-item {
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 5px;
-    background-color: none;
-    color: white;
-    text-align: center;
-    border: 1px solid white;
-    margin-top: 20px;
-}
-
-.countdown-number {
-    font-weight: bold;
-}
-
-.countdown-label {
-    font-size: 0.9em;
-    color: lightgrey;
-}
-
-#social-links {
-    background: none;
-}
-.social-link {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-decoration: none;
-    background: black;
-    padding: 10px 30px;
-    margin: 20px 0px;
-    border: 1px solid white;
-}
-.social-link img {
-    width: 40px; /* Set the width of the image */
-    margin-right: 10px; /* Add some spacing between the image and text */
-    background-color: white;
-    border-radius: 100%;
-    padding: 1px;
-}
-.social-link-text {
-    color: white;
-    font-family: 'Trebuchet MS';
-}
-
 
 #copy {
     color: red;
