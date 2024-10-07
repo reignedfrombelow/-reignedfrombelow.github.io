@@ -1,24 +1,18 @@
-#social-links {
-    background: none;
-}
 .social-link {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
-    background: black;
-    padding: 10px 30px;
-    margin: 20px 0px;
-    border: 1px solid white;
+    padding: 10px;
 }
 .social-link img {
     width: 40px; /* Set the width of the image */
-    margin-right: 10px; /* Add some spacing between the image and text */
-    background-color: white;
+    background: white;
     border-radius: 100%;
     padding: 1px;
 }
-.social-link-text {
-    color: white;
-    font-family: 'Trebuchet MS';
+
+.social-link img:hover,
+.social-link img:focus {
+    background: gray;
 }

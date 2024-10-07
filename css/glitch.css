@@ -1,8 +1,7 @@
 #glitch {
-    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 120vh;
     margin: 10px 0px;
@@ -13,7 +12,6 @@
 }
 
 #glitchlinktree {
-    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;

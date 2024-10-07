@@ -2,28 +2,16 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
+    background-color: black;
 }
 
 a {
     color: white;
 }
-
 a:hover {
     color: lightgray;
 }
 
-h2 {
-    text-decoration: underline;
-}
-
-.black {
-    background-color: black;
-    color: white;
-}
-.red {
-    background: red;
-}
 .cgray {
     color: gray;
 }
@@ -39,16 +27,16 @@ h2 {
     text-align: center;
     padding: 50px 0px;
     line-height: 1.6;
+    color: white;
 }
-
-.bgimage {
-    background-image: url('../images/bg1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-position: center;
+.content_horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
 }
 
 #copy {
-    color: red;
+    color: gray;
 }
