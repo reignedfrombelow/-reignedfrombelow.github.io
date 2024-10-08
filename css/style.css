@@ -40,3 +40,8 @@ a:hover {
 #copy {
     color: gray;
 }
+
+#legal {
+    padding: 20%;
+    text-align: left;
+}
